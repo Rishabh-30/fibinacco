@@ -30,7 +30,8 @@ public class fibinaccoTest {
      @Test
      public void chechNotCorrect(){
           ArrayList<Integer> fb = (ArrayList<Integer>) fibinaco.fibinacci(7);
-          ArrayList <Integer> expected = new ArrayList<>(Arrays.asList(0,1,1,2,3));
-          Assert.assertNotEquals(expected,fb);
+          ArrayList <Integer> unexpected = new ArrayList<>(Arrays.asList(0,1,1,2,3));
+//          ArrayList <Integer> expected1 = new ArrayList<>(5,6,8,9,10);
+          Assert.assertNotEquals(unexpected,fb);
      }
 }
